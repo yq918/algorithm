@@ -29,7 +29,7 @@ int __partition2(int arr[],int l,int r){
       while( 1==1 ){
       	  while( i <=r && arr[i] < v) i++;
       	  while( j >= l+1 && arr[j] > v) j--;
-      	  if(i > j) break;
+      	  if(i >= j) break;
       	  temp = arr[i];
       	  arr[i] = arr[j];
       	  arr[j] = temp;
